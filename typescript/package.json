@@ -1,0 +1,62 @@
+{
+  "name": "@itssender/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript/JavaScript SDK for itssender - Omnichannel WhatsApp & Messaging Gateway",
+  "keywords": [
+    "itssender",
+    "whatsapp",
+    "messaging",
+    "gateway",
+    "sdk",
+    "typescript",
+    "webhooks",
+    "otp"
+  ],
+  "author": "itssender team",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./crypto": {
+      "import": {
+        "types": "./dist/crypto/index.d.mts",
+        "default": "./dist/crypto/index.mjs"
+      },
+      "require": {
+        "types": "./dist/crypto/index.d.ts",
+        "default": "./dist/crypto/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsup": "^9.0.0",
+    "typescript": "^5.7.3",
+    "vitest": "^5.1.1"
+  }
+}

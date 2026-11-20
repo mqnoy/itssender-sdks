@@ -1,0 +1,24 @@
+# Node
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+pnpm-debug.log*
+
+# Go
+/bin/
+vendor/
+*.test
+*.out
+coverage.txt
+
+# Environment / OS
+*.log
+tmp/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
